@@ -1,0 +1,9 @@
+project: rust-cbor
+
+# Target name (unique within the project)
+target: cbor-fuzz
+
+cmds:
+    # libFuzzer binary; Mayhem feeds inputs on stdin (no @@ = stdin input).
+    - cmd: /mayhem/cbor-fuzz
+      libfuzzer: true

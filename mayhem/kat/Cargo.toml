@@ -1,0 +1,15 @@
+[package]
+name = "cbor-kat"
+version = "0.0.0"
+publish = false
+edition = "2018"
+
+[dependencies.cbor]
+path = "../.."
+
+[[bin]]
+name = "cbor-kat"
+path = "src/main.rs"
+
+[workspace]
+members = ["."]
